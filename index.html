@@ -13,6 +13,10 @@
 				font-family: Arial, Helvetica, sans-serif;
 				font-size: 1.25em;
 			}
+			.quote {
+				font-size: 1.25em;
+				font-style: italic;
+			}
 			img {
 				filter:blur(1px);
 			}
@@ -23,26 +27,44 @@
 		</style>
 	</head>
 	<body>
-<img src="img/06, crossed out.png"/>
+<img src="img/06, crossed out.png"/> <img class="steamscreen" src="img/screens/screen-droqen.jpg"/>
 <br/>
 <pre class="stanza">
-hello writer or thing maker!
-i'm droqen, i also make things.
-
-i have written to you because i have the idea that you
-might like to write about or make a thing about my videogame
-which would be great for me, since i'd like people to know about it.
-
-it's coming out when the flower moon is full.
-(May 12, ~1PM EST if a midday release is allowable by Steam)
-</pre>
-<pre class="stanza">
+my new game <strong><em>"The End of Gameplay"</em></strong>
+is releasing on Steam when the flower moon is full.
+(May 12, ~12:56PM EST) (around noon, don't mix up AM/PM like i do, haha)
 
 
 
-here are some quotes
-from people who have told me that my new video game
-<strong><em>The End of Gameplay</em></strong> is good and/or affected them:
+- i think of it like a poetry anthology of games, or levels;
+  each one is on a subject and conveys a strong emotion,
+  and together they have a collective effect, too.
+
+- it has gameplay, but it is also an exploration of some
+  inherent badness of gameplay, which i have felt for years
+  but only properly identified sometime in the past year
+  when i started saying the magical phrase "kill gameplay."
+
+- structurally it is novel in a seriously minimalist way,
+  presenting the player with an unopinionated list of levels
+  to play in any order.
+
+- there is poetry and music and pixel art compositions
+  and a weird character controller. (at least one.)
+
+- some of the levels, i'm told, are beautiful,
+  and do good work conveying emotions through gameplay.
+  
+
+
+
+here is the trailer (44s)
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/g_kQLrBSrt0?si=zkbsfQHF3kjAODXL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+here are some quotes from people who have been affected by <strong><em>The End of Gameplay</em></strong>
 </pre>
 <p class="quote" style="width:440px; margin-left: 2em;">
 	"it's really beautiful and polished and intentional. The levels are really nice to look at, like the craftsmanship is really really high and it is a beautiful thing . . . Imagine you make pottery and mugs for a living and then one day you make a mug that is all handles just to show off that you can."
@@ -92,21 +114,22 @@ here are some images that you can use freely:
 	<img class="steamscreen" src="img/screens/screen9-menu.png"/>
 	<img class="steamscreen" src="img/screens/screen10-tree.png"/>
 	<img class="steamscreen" src="img/screens/screen20-snow.png"/>
+	<img class="steamscreen" src="img/screens/screen-droqen.jpg"/>
 </div>
 <script>
-	const ctr = document.getElementById("images-for-press");
-	let images = Array.from(ctr.children);
-	for (let i=0;i<images.length-1;i++) {
-		let j=i+Math.floor(Math.random()*(images.length-1-i));
-		if(i!=j) {
-			let t = images[i];
-			images[i] = images[j];
-			images[j] = t;
-		}
-	}
-	ctr.innerHTML = '';
-	images.forEach(function(image){ctr.appendChild(image); ctr.innerHTML += ' '; });
-	console.log(images);
+	// const ctr = document.getElementById("images-for-press");
+	// let images = Array.from(ctr.children);
+	// for (let i=0;i<images.length-1;i++) {
+	// 	let j=i+Math.floor(Math.random()*(images.length-1-i));
+	// 	if(i!=j) {
+	// 		let t = images[i];
+	// 		images[i] = images[j];
+	// 		images[j] = t;
+	// 	}
+	// }
+	// ctr.innerHTML = '';
+	// images.forEach(function(image){ctr.appendChild(image); ctr.innerHTML += ' '; });
+	// console.log(images);
 </script>
 
 <pre class="stanza">
@@ -155,10 +178,14 @@ will gameplay's pen write my name when i die?
 
 
 here is my email address if you have any questions:
-droqen@gmail.com
 
-thanks!
+	droqen@gmail.com
+
+thanks for reading.
 love, droqen
 </pre>
 </body>
 </html>
+
+
+
